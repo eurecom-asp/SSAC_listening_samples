@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Accent Conversion Audio Examples</title>
+
+<style>
+:root{
+  --bg-top:#fff8fb;
+  --bg-bottom:#f8fbff;
+
+  --paper:rgba(255,255,255,.88);
+
+  --ink:#344054;
+  --ink-strong:#26364d;
+  --muted:#667085;
+
+  --line:#eadfe8;
+
+  --pink:#fff0f6;
+  --mint:#eefbf5;
+  --lavender:#f3f0ff;
+  --blue:#eef6ff;
+  --peach:#fff4ec;
+  --butter:#fffbea;
+
+  --ours-bg:#edf3ff;
+  --ours-line:#cddaff;
+
+  --citation:#7b6fd0;
+
+  --shadow:
+    0 10px 30px rgba(167,145,170,.09),
+    0 2px 6px rgba(167,145,170,.04);
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  color:var(--ink);
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background:
+    radial-gradient(
+      circle at 0% 0%,
+      #fff0f6 0%,
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 100% 0%,
+      #eef8ff 0%,
+      transparent 34%
+    ),
+    linear-gradient(
+      180deg,
+      var(--bg-top) 0%,
+      var(--bg-bottom) 100%
+    );
+}
+
+.wrap{
+  max-width:1680px;
+  margin:0 auto;
+  padding:22px 20px 56px;
+}
+
+
+/* ---------------------------------------------------------
+   HERO
+--------------------------------------------------------- */
+
+.hero,
+.case,
+.references{
+  background:var(--paper);
+  border:1px solid rgba(234,223,232,.95);
+  border-radius:24px;
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(10px);
+}
+
+.hero{
+  padding:30px 30px 25px;
+  margin-bottom:22px;
+}
+
+.hero h1{
+  margin:0 0 11px;
+  color:var(--ink-strong);
+  font-size:34px;
+  line-height:1.08;
+  letter-spacing:-.025em;
+}
+
+.hero-subtitle{
+  max-width:1020px;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.7;
+}
+
+
+/* ---------------------------------------------------------
+   CASE / TARGET BLOCK
+--------------------------------------------------------- */
+
+.case{
+  padding:16px;
+  margin-bottom:19px;
+}
+
+.case-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+
+  margin-bottom:16px;
+}
+
+.target-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  padding:10px 16px;
+
+  border:1px solid var(--line);
+  border-radius:999px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #fff8fb 100%
+    );
+
+  color:var(--ink-strong);
+  font-size:18px;
+  font-weight:900;
+}
+
+.target-prefix{
+  padding:4px 10px;
+
+  border-radius:999px;
+
+  background:#ece6ff;
+  color:#7565c5;
+
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.02em;
+  text-transform:uppercase;
+}
+
+.case-note{
+  color:var(--muted);
+  font-size:12px;
+  text-align:right;
+}
+
+
+/* ---------------------------------------------------------
+   SOURCE
+--------------------------------------------------------- */
+
+.source-card{
+  padding:16px;
+
+  border:1px solid #eadfd7;
+  border-radius:20px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffefa 0%,
+      #fff6ed 100%
+    );
+
+  margin-bottom:14px;
+}
+
+.source-title{
+  color:var(--ink-strong);
+  font-size:15px;
+  font-weight:900;
+  margin-bottom:4px;
+}
+
+.source-help{
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.45;
+  margin-bottom:10px;
+}
+
+.source-transcript{
+  margin-bottom:10px;
+  padding:8px 12px;
+
+  border:1px solid #efe5d9;
+  border-radius:12px;
+
+  background:rgba(255,255,255,.55);
+
+  color:#556176;
+  font-size:13px;
+  line-height:1.5;
+  font-style:italic;
+}
+
+audio{
+  width:100%;
+  height:32px;
+}
+
+
+/* ---------------------------------------------------------
+   METHOD CARDS
+--------------------------------------------------------- */
+
+.methods-grid{
+  display:grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap:8px;
+}
+
+.method-card{
+  padding:8px 9px;
+
+  border:1px solid var(--line);
+  border-radius:13px;
+
+  box-shadow:
+    0 4px 14px rgba(173,154,184,.045);
+}
+
+/* macaron palette */
+.method-card:nth-child(6n+1){
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      var(--pink) 100%
+    );
+}
+
+.method-card:nth-child(6n+2){
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      var(--mint) 100%
+    );
+}
+
+.method-card:nth-child(6n+3){
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      var(--lavender) 100%
+    );
+}
+
+.method-card:nth-child(6n+4){
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      var(--blue) 100%
+    );
+}
+
+.method-card:nth-child(6n+5){
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      var(--peach) 100%
+    );
+}
+
+.method-card:nth-child(6n+6){
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      var(--butter) 100%
+    );
+}
+
+/* Ours gets a slightly stronger visual emphasis */
+.method-card.ours{
+  border:2px solid var(--ours-line);
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      var(--ours-bg) 100%
+    );
+}
+
+.method-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:9px;
+
+  margin-bottom:5px;
+}
+
+.method-title{
+  color:var(--ink-strong);
+  font-size:12px;
+  font-weight:900;
+}
+
+.ours-tag{
+  flex:none;
+
+  padding:3px 6px;
+
+  color:#3e59bc;
+  background:#dde7ff;
+
+  border-radius:999px;
+
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:.02em;
+  text-transform:uppercase;
+}
+
+
+/* ---------------------------------------------------------
+   CITATIONS
+--------------------------------------------------------- */
+
+.cite{
+  margin-left:2px;
+
+  color:var(--citation);
+  text-decoration:none;
+
+  font-size:11px;
+  font-weight:900;
+
+  vertical-align:super;
+}
+
+.cite:hover{
+  text-decoration:underline;
+}
+
+
+/* ---------------------------------------------------------
+   REFERENCES
+--------------------------------------------------------- */
+
+.references{
+  margin-top:25px;
+  padding:25px 28px;
+}
+
+.references h2{
+  margin:0 0 16px;
+
+  color:var(--ink-strong);
+
+  font-size:22px;
+  line-height:1.2;
+}
+
+.ref-item{
+  display:grid;
+  grid-template-columns:38px 1fr;
+  gap:8px;
+
+  padding:10px 0;
+
+  color:#596579;
+
+  font-size:13px;
+  line-height:1.65;
+
+  border-bottom:1px solid #f0e8ef;
+}
+
+.ref-item:last-child{
+  border-bottom:0;
+}
+
+.ref-num{
+  color:var(--citation);
+  font-weight:900;
+}
+
+.ref-title{
+  color:#3d4a5f;
+  font-style:italic;
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER
+--------------------------------------------------------- */
+
+.footer{
+  margin-top:25px;
+
+  color:var(--muted);
+
+  font-size:12px;
+  line-height:1.6;
+
+  text-align:center;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------- */
+
+@media(max-width:980px){
+  .methods-grid{
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media(max-width:650px){
+  .wrap{
+    padding:14px 10px 42px;
+  }
+
+  .hero,
+  .case,
+  .references{
+    padding:17px;
+  }
+
+  .hero h1{
+    font-size:28px;
+  }
+
+  .methods-grid{
+    grid-template-columns:1fr;
+  }
+
+  .case-head{
+    display:block;
+  }
+
+  .case-note{
+    margin-top:8px;
+    text-align:left;
+  }
+}
+
+
+/* =========================================================
+   FINAL LAYOUT OVERRIDE
+   Desktop: all six methods in ONE row
+========================================================= */
+
+.methods-grid{
+  display:grid !important;
+  grid-template-columns:repeat(6,minmax(0,1fr)) !important;
+  gap:7px !important;
+}
+
+.method-card{
+  min-width:0 !important;
+  padding:10px 12px !important;
+  border-radius:12px !important;
+}
+
+.method-header{
+  margin-bottom:4px !important;
+  min-width:0 !important;
+}
+
+.method-title{
+  font-size:14px !important;
+  line-height:1.15 !important;
+  white-space:nowrap;
+}
+
+.method-card audio{
+  display:block;
+  width:100% !important;
+  min-width:0 !important;
+  height:34px !important;
+}
+
+.ours-tag{
+  padding:3px 7px !important;
+  font-size:8px !important;
+}
+
+/* Only collapse on genuinely small screens */
+@media(max-width:700px){
+  .methods-grid{
+    grid-template-columns:1fr !important;
+  }
+}
+
+
+
+/* ===== FINAL HERO CENTER OVERRIDE ===== */
+
+.hero{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+}
+
+.hero h1{
+  width:100% !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center !important;
+}
+
+.hero-subtitle{
+  width:100% !important;
+  max-width:none !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center !important;
+}
+
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <section class="hero">
+    <h1>Accent Conversion Audio Examples</h1>
+
+    <div class="hero-subtitle">
+      Qualitative examples comparing our method with external
+      accent-conversion baselines.
+    </div>
+
+  </section>
+
+
+  <main id="casesRoot"></main>
+
+
+  <section class="references">
+    <h2>References</h2>
+
+    <div
+      class="ref-item"
+      id="ref1">
+
+      <span class="ref-num">[1]</span>
+
+      <span>
+        Zhang X, et al.
+        <span class="ref-title">
+          Vevo: Controllable Zero-Shot Voice Imitation with
+          Self-Supervised Disentanglement.
+        </span>
+        ICLR, 2025.
+      </span>
+    </div>
+
+
+    <div
+      class="ref-item"
+      id="ref2">
+
+      <span class="ref-num">[2]</span>
+
+      <span>
+        Li J, Zhang X, Wang Y, et al.
+        <span class="ref-title">
+          Overview of the Amphion Toolkit (v0.2).
+        </span>
+        arXiv preprint arXiv:2501.15442, 2025.
+      </span>
+    </div>
+
+
+    <div
+      class="ref-item"
+      id="ref3">
+
+      <span class="ref-num">[3]</span>
+
+      <span>
+        Zhang X, et al.
+        <span class="ref-title">
+          Vevo2: A Unified and Controllable Framework for
+          Speech and Singing Voice Generation.
+        </span>
+        IEEE/ACM Transactions on Audio, Speech, and
+        Language Processing, 2026.
+      </span>
+    </div>
+
+
+    <div
+      class="ref-item"
+      id="ref4">
+
+      <span class="ref-num">[4]</span>
+
+      <span>
+        Liu S.
+        <span class="ref-title">
+          Zero-shot Voice Conversion with Diffusion Transformers.
+        </span>
+        arXiv preprint arXiv:2411.09943, 2024.
+      </span>
+    </div>
+
+
+    <div
+      class="ref-item"
+      id="ref5">
+
+      <span class="ref-num">[5]</span>
+
+      <span>
+        Li Y A, Zare A, Mesgarani N.
+        <span class="ref-title">
+          StarGANv2-VC: A Diverse, Unsupervised, Non-Parallel
+          Framework for Natural-Sounding Voice Conversion.
+        </span>
+        Interspeech, 2021.
+      </span>
+    </div>
+
+  </section>
+
+
+  <div class="footer">
+    Qualitative audio supplement for the Accent Conversion study.
+    Method identities are visible because this page is intended
+    for paper/demo presentation rather than blinded listening evaluation.
+  </div>
+
+</div>
+
+
+<script>
+const CITATIONS = {
+  "Ours": "",
+  "Vevo-Style":
+    '<a class="cite" href="#ref1" title="Reference 1">[1]</a>',
+  "Vevo1.5":
+    '<a class="cite" href="#ref2" title="Reference 2">[2]</a>',
+  "Vevo2":
+    '<a class="cite" href="#ref3" title="Reference 3">[3]</a>',
+  "SeedVC-v2":
+    '<a class="cite" href="#ref4" title="Reference 4">[4]</a>',
+  "StarGANv2-VC":
+    '<a class="cite" href="#ref5" title="Reference 5">[5]</a>'
+};
+
+
+fetch(
+  "cases.json",
+  {cache:"no-store"}
+)
+.then(response=>{
+  if(!response.ok){
+    throw new Error(
+      "Failed to load cases.json: HTTP "
+      + response.status
+    );
+  }
+
+  return response.json();
+})
+.then(cases=>{
+
+  /*
+    Main content:
+    each block shows only target accent in its header.
+    No source accent and no case number.
+  */
+  document
+    .getElementById("casesRoot")
+    .innerHTML =
+      cases
+        .map(c=>`
+          <section
+            class="case"
+            id="${c.case_id}">
+
+            <div class="case-head">
+
+              <div class="target-badge">
+                <span class="target-prefix">
+                  Target accent
+                </span>
+
+                <span>
+                  ${c.target_accent}
+                </span>
+              </div>
+
+            </div>
+
+
+            <div class="source-card">
+
+              <div class="source-title">
+                Original Source Speech
+              </div>
+
+              
+
+              <audio
+                controls
+                preload="metadata"
+                src="${c.source_url}">
+              </audio>
+
+            </div>
+
+
+            <div class="methods-grid">
+
+              ${
+                c.methods
+                  .map(m=>`
+
+                    <div
+                      class="
+                        method-card
+                        ${m.is_ours ? "ours" : ""}
+                      ">
+
+                      <div class="method-header">
+
+                        <div class="method-title">
+                          ${m.label}
+                          ${CITATIONS[m.label] || ""}
+                        </div>
+
+                        
+
+                      </div>
+
+                      <audio
+                        controls
+                        preload="metadata"
+                        src="${m.audio_url}">
+                      </audio>
+
+                    </div>
+
+                  `)
+                  .join("")
+              }
+
+            </div>
+
+          </section>
+        `)
+        .join("");
+
+})
+.catch(err=>{
+
+  document.body.innerHTML =
+    "<pre style='padding:20px'>"
+    + "Failed to load demo files:\\n\\n"
+    + String(err)
+    + "</pre>";
+
+});
+</script>
+
+</body>
+</html>

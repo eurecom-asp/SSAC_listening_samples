@@ -1,0 +1,530 @@
+[
+  {
+    "case_id": "case_01",
+    "target_accent": "Chinese",
+    "source_text": "You were looking squeamish this afternoon, he began.",
+    "source_url": "audio/case_01/source.wav",
+    "methods": [
+      {
+        "label": "Vevo-Style",
+        "audio_url": "audio/case_01/vevostyle.wav",
+        "is_ours": false,
+        "citation_id": "1"
+      },
+      {
+        "label": "Vevo1.5",
+        "audio_url": "audio/case_01/vevo15.wav",
+        "is_ours": false,
+        "citation_id": "2"
+      },
+      {
+        "label": "Vevo2",
+        "audio_url": "audio/case_01/vevo2.wav",
+        "is_ours": false,
+        "citation_id": "3"
+      },
+      {
+        "label": "SeedVC-v2",
+        "audio_url": "audio/case_01/seedvc2.wav",
+        "is_ours": false,
+        "citation_id": "4"
+      },
+      {
+        "label": "StarGANv2-VC",
+        "audio_url": "audio/case_01/starganv2.wav",
+        "is_ours": false,
+        "citation_id": "5"
+      },
+      {
+        "label": "Ours",
+        "audio_url": "audio/case_01/ours.wav",
+        "is_ours": true,
+        "citation_id": ""
+      }
+    ]
+  },
+  {
+    "case_id": "case_02",
+    "target_accent": "Chinese",
+    "source_text": "The promoter's eyes were heavy, with little puffy bags under them.",
+    "source_url": "audio/case_02/source.wav",
+    "methods": [
+      {
+        "label": "Vevo-Style",
+        "audio_url": "audio/case_02/vevostyle.wav",
+        "is_ours": false,
+        "citation_id": "1"
+      },
+      {
+        "label": "Vevo1.5",
+        "audio_url": "audio/case_02/vevo15.wav",
+        "is_ours": false,
+        "citation_id": "2"
+      },
+      {
+        "label": "Vevo2",
+        "audio_url": "audio/case_02/vevo2.wav",
+        "is_ours": false,
+        "citation_id": "3"
+      },
+      {
+        "label": "SeedVC-v2",
+        "audio_url": "audio/case_02/seedvc2.wav",
+        "is_ours": false,
+        "citation_id": "4"
+      },
+      {
+        "label": "StarGANv2-VC",
+        "audio_url": "audio/case_02/starganv2.wav",
+        "is_ours": false,
+        "citation_id": "5"
+      },
+      {
+        "label": "Ours",
+        "audio_url": "audio/case_02/ours.wav",
+        "is_ours": true,
+        "citation_id": ""
+      }
+    ]
+  },
+  {
+    "case_id": "case_03",
+    "target_accent": "Hindi",
+    "source_text": "I'd say there was going to be a glorious scrap.",
+    "source_url": "audio/case_03/source.wav",
+    "methods": [
+      {
+        "label": "Vevo-Style",
+        "audio_url": "audio/case_03/vevostyle.wav",
+        "is_ours": false,
+        "citation_id": "1"
+      },
+      {
+        "label": "Vevo1.5",
+        "audio_url": "audio/case_03/vevo15.wav",
+        "is_ours": false,
+        "citation_id": "2"
+      },
+      {
+        "label": "Vevo2",
+        "audio_url": "audio/case_03/vevo2.wav",
+        "is_ours": false,
+        "citation_id": "3"
+      },
+      {
+        "label": "SeedVC-v2",
+        "audio_url": "audio/case_03/seedvc2.wav",
+        "is_ours": false,
+        "citation_id": "4"
+      },
+      {
+        "label": "StarGANv2-VC",
+        "audio_url": "audio/case_03/starganv2.wav",
+        "is_ours": false,
+        "citation_id": "5"
+      },
+      {
+        "label": "Ours",
+        "audio_url": "audio/case_03/ours.wav",
+        "is_ours": true,
+        "citation_id": ""
+      }
+    ]
+  },
+  {
+    "case_id": "case_04",
+    "target_accent": "Hindi",
+    "source_text": "His mouth opened; words shaped vainly on his lips.",
+    "source_url": "audio/case_04/source.wav",
+    "methods": [
+      {
+        "label": "Vevo-Style",
+        "audio_url": "audio/case_04/vevostyle.wav",
+        "is_ours": false,
+        "citation_id": "1"
+      },
+      {
+        "label": "Vevo1.5",
+        "audio_url": "audio/case_04/vevo15.wav",
+        "is_ours": false,
+        "citation_id": "2"
+      },
+      {
+        "label": "Vevo2",
+        "audio_url": "audio/case_04/vevo2.wav",
+        "is_ours": false,
+        "citation_id": "3"
+      },
+      {
+        "label": "SeedVC-v2",
+        "audio_url": "audio/case_04/seedvc2.wav",
+        "is_ours": false,
+        "citation_id": "4"
+      },
+      {
+        "label": "StarGANv2-VC",
+        "audio_url": "audio/case_04/starganv2.wav",
+        "is_ours": false,
+        "citation_id": "5"
+      },
+      {
+        "label": "Ours",
+        "audio_url": "audio/case_04/ours.wav",
+        "is_ours": true,
+        "citation_id": ""
+      }
+    ]
+  },
+  {
+    "case_id": "case_05",
+    "target_accent": "Arabic",
+    "source_text": "The ringing of the big bell aroused him.",
+    "source_url": "audio/case_05/source.wav",
+    "methods": [
+      {
+        "label": "Vevo-Style",
+        "audio_url": "audio/case_05/vevostyle.wav",
+        "is_ours": false,
+        "citation_id": "1"
+      },
+      {
+        "label": "Vevo1.5",
+        "audio_url": "audio/case_05/vevo15.wav",
+        "is_ours": false,
+        "citation_id": "2"
+      },
+      {
+        "label": "Vevo2",
+        "audio_url": "audio/case_05/vevo2.wav",
+        "is_ours": false,
+        "citation_id": "3"
+      },
+      {
+        "label": "SeedVC-v2",
+        "audio_url": "audio/case_05/seedvc2.wav",
+        "is_ours": false,
+        "citation_id": "4"
+      },
+      {
+        "label": "StarGANv2-VC",
+        "audio_url": "audio/case_05/starganv2.wav",
+        "is_ours": false,
+        "citation_id": "5"
+      },
+      {
+        "label": "Ours",
+        "audio_url": "audio/case_05/ours.wav",
+        "is_ours": true,
+        "citation_id": ""
+      }
+    ]
+  },
+  {
+    "case_id": "case_06",
+    "target_accent": "Arabic",
+    "source_text": "Let them go out and eat with my boys.",
+    "source_url": "audio/case_06/source.wav",
+    "methods": [
+      {
+        "label": "Vevo-Style",
+        "audio_url": "audio/case_06/vevostyle.wav",
+        "is_ours": false,
+        "citation_id": "1"
+      },
+      {
+        "label": "Vevo1.5",
+        "audio_url": "audio/case_06/vevo15.wav",
+        "is_ours": false,
+        "citation_id": "2"
+      },
+      {
+        "label": "Vevo2",
+        "audio_url": "audio/case_06/vevo2.wav",
+        "is_ours": false,
+        "citation_id": "3"
+      },
+      {
+        "label": "SeedVC-v2",
+        "audio_url": "audio/case_06/seedvc2.wav",
+        "is_ours": false,
+        "citation_id": "4"
+      },
+      {
+        "label": "StarGANv2-VC",
+        "audio_url": "audio/case_06/starganv2.wav",
+        "is_ours": false,
+        "citation_id": "5"
+      },
+      {
+        "label": "Ours",
+        "audio_url": "audio/case_06/ours.wav",
+        "is_ours": true,
+        "citation_id": ""
+      }
+    ]
+  },
+  {
+    "case_id": "case_07",
+    "target_accent": "Korean",
+    "source_text": "And then, steadily, he began to chew.",
+    "source_url": "audio/case_07/source.wav",
+    "methods": [
+      {
+        "label": "Vevo-Style",
+        "audio_url": "audio/case_07/vevostyle.wav",
+        "is_ours": false,
+        "citation_id": "1"
+      },
+      {
+        "label": "Vevo1.5",
+        "audio_url": "audio/case_07/vevo15.wav",
+        "is_ours": false,
+        "citation_id": "2"
+      },
+      {
+        "label": "Vevo2",
+        "audio_url": "audio/case_07/vevo2.wav",
+        "is_ours": false,
+        "citation_id": "3"
+      },
+      {
+        "label": "SeedVC-v2",
+        "audio_url": "audio/case_07/seedvc2.wav",
+        "is_ours": false,
+        "citation_id": "4"
+      },
+      {
+        "label": "StarGANv2-VC",
+        "audio_url": "audio/case_07/starganv2.wav",
+        "is_ours": false,
+        "citation_id": "5"
+      },
+      {
+        "label": "Ours",
+        "audio_url": "audio/case_07/ours.wav",
+        "is_ours": true,
+        "citation_id": ""
+      }
+    ]
+  },
+  {
+    "case_id": "case_08",
+    "target_accent": "Korean",
+    "source_text": "We leave the eventuality to time and law.",
+    "source_url": "audio/case_08/source.wav",
+    "methods": [
+      {
+        "label": "Vevo-Style",
+        "audio_url": "audio/case_08/vevostyle.wav",
+        "is_ours": false,
+        "citation_id": "1"
+      },
+      {
+        "label": "Vevo1.5",
+        "audio_url": "audio/case_08/vevo15.wav",
+        "is_ours": false,
+        "citation_id": "2"
+      },
+      {
+        "label": "Vevo2",
+        "audio_url": "audio/case_08/vevo2.wav",
+        "is_ours": false,
+        "citation_id": "3"
+      },
+      {
+        "label": "SeedVC-v2",
+        "audio_url": "audio/case_08/seedvc2.wav",
+        "is_ours": false,
+        "citation_id": "4"
+      },
+      {
+        "label": "StarGANv2-VC",
+        "audio_url": "audio/case_08/starganv2.wav",
+        "is_ours": false,
+        "citation_id": "5"
+      },
+      {
+        "label": "Ours",
+        "audio_url": "audio/case_08/ours.wav",
+        "is_ours": true,
+        "citation_id": ""
+      }
+    ]
+  },
+  {
+    "case_id": "case_09",
+    "target_accent": "Spanish",
+    "source_text": "With these arguments he convinced himself that he should go on alone.",
+    "source_url": "audio/case_09/source.wav",
+    "methods": [
+      {
+        "label": "Vevo-Style",
+        "audio_url": "audio/case_09/vevostyle.wav",
+        "is_ours": false,
+        "citation_id": "1"
+      },
+      {
+        "label": "Vevo1.5",
+        "audio_url": "audio/case_09/vevo15.wav",
+        "is_ours": false,
+        "citation_id": "2"
+      },
+      {
+        "label": "Vevo2",
+        "audio_url": "audio/case_09/vevo2.wav",
+        "is_ours": false,
+        "citation_id": "3"
+      },
+      {
+        "label": "SeedVC-v2",
+        "audio_url": "audio/case_09/seedvc2.wav",
+        "is_ours": false,
+        "citation_id": "4"
+      },
+      {
+        "label": "StarGANv2-VC",
+        "audio_url": "audio/case_09/starganv2.wav",
+        "is_ours": false,
+        "citation_id": "5"
+      },
+      {
+        "label": "Ours",
+        "audio_url": "audio/case_09/ours.wav",
+        "is_ours": true,
+        "citation_id": ""
+      }
+    ]
+  },
+  {
+    "case_id": "case_10",
+    "target_accent": "Spanish",
+    "source_text": "In the Bohemian Club of San Francisco there are some crack sailors.",
+    "source_url": "audio/case_10/source.wav",
+    "methods": [
+      {
+        "label": "Vevo-Style",
+        "audio_url": "audio/case_10/vevostyle.wav",
+        "is_ours": false,
+        "citation_id": "1"
+      },
+      {
+        "label": "Vevo1.5",
+        "audio_url": "audio/case_10/vevo15.wav",
+        "is_ours": false,
+        "citation_id": "2"
+      },
+      {
+        "label": "Vevo2",
+        "audio_url": "audio/case_10/vevo2.wav",
+        "is_ours": false,
+        "citation_id": "3"
+      },
+      {
+        "label": "SeedVC-v2",
+        "audio_url": "audio/case_10/seedvc2.wav",
+        "is_ours": false,
+        "citation_id": "4"
+      },
+      {
+        "label": "StarGANv2-VC",
+        "audio_url": "audio/case_10/starganv2.wav",
+        "is_ours": false,
+        "citation_id": "5"
+      },
+      {
+        "label": "Ours",
+        "audio_url": "audio/case_10/ours.wav",
+        "is_ours": true,
+        "citation_id": ""
+      }
+    ]
+  },
+  {
+    "case_id": "case_11",
+    "target_accent": "Vietnamese",
+    "source_text": "The journey was continued at dawn.",
+    "source_url": "audio/case_11/source.wav",
+    "methods": [
+      {
+        "label": "Vevo-Style",
+        "audio_url": "audio/case_11/vevostyle.wav",
+        "is_ours": false,
+        "citation_id": "1"
+      },
+      {
+        "label": "Vevo1.5",
+        "audio_url": "audio/case_11/vevo15.wav",
+        "is_ours": false,
+        "citation_id": "2"
+      },
+      {
+        "label": "Vevo2",
+        "audio_url": "audio/case_11/vevo2.wav",
+        "is_ours": false,
+        "citation_id": "3"
+      },
+      {
+        "label": "SeedVC-v2",
+        "audio_url": "audio/case_11/seedvc2.wav",
+        "is_ours": false,
+        "citation_id": "4"
+      },
+      {
+        "label": "StarGANv2-VC",
+        "audio_url": "audio/case_11/starganv2.wav",
+        "is_ours": false,
+        "citation_id": "5"
+      },
+      {
+        "label": "Ours",
+        "audio_url": "audio/case_11/ours.wav",
+        "is_ours": true,
+        "citation_id": ""
+      }
+    ]
+  },
+  {
+    "case_id": "case_12",
+    "target_accent": "Vietnamese",
+    "source_text": "It's the strap hangers that'll keep us from going under.",
+    "source_url": "audio/case_12/source.wav",
+    "methods": [
+      {
+        "label": "Vevo-Style",
+        "audio_url": "audio/case_12/vevostyle.wav",
+        "is_ours": false,
+        "citation_id": "1"
+      },
+      {
+        "label": "Vevo1.5",
+        "audio_url": "audio/case_12/vevo15.wav",
+        "is_ours": false,
+        "citation_id": "2"
+      },
+      {
+        "label": "Vevo2",
+        "audio_url": "audio/case_12/vevo2.wav",
+        "is_ours": false,
+        "citation_id": "3"
+      },
+      {
+        "label": "SeedVC-v2",
+        "audio_url": "audio/case_12/seedvc2.wav",
+        "is_ours": false,
+        "citation_id": "4"
+      },
+      {
+        "label": "StarGANv2-VC",
+        "audio_url": "audio/case_12/starganv2.wav",
+        "is_ours": false,
+        "citation_id": "5"
+      },
+      {
+        "label": "Ours",
+        "audio_url": "audio/case_12/ours.wav",
+        "is_ours": true,
+        "citation_id": ""
+      }
+    ]
+  }
+]
